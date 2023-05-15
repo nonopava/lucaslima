@@ -3,48 +3,86 @@ body {
      background-color: blanchedalmond;
 }
 
+div {
+     width: 100%;
+     margin: 0 auto;
+}
+
+#audio {
+          width: 45%;   
+          float: left;
+}
 audio {
      float: left;
-     width: 15%;
+     width: 45%;
 }
-
-
- div {
-    width: 90%;
-    margin: 0 auto;
+#imgTitulo {
+     width: 50%;
+     float: right;
 }
-
-img {
-    width: 50%;
-    height: 500px;
-    margin-left: 25%
-   
+#imgTitulo img {
+     width: 80%;
+     text-align: center;
 }
-
 h1 {
-    color: #FFF;
-    font-style: oblique;
-    font-weight: bold;
-    text-align: center
-    
+     color: #FFF;    
+}
+h3 {
+   color: #FFF;
+}
+
+#mensagem {
+     float: left;
+     width: 35%;
+     text-align: justify;
+}
+
+.clear {
+     clear: both;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1000px) {
-     div {
-    width: 80%;
+    div {
+    width: 100%;
     margin: 0 auto;
 }
+ #imgTitulo {
+     width: 100%;
+     float: none;
+     margin-bottom: 1%;
+}
  img {
-      width: 90%;
-      height: 50%;
-      margin: 7%;  
+      width: 100%;
+      height: 100%; 
+      float: none;
+}
+     
+#imgTitulo img {
+     width: 100%;
+     text-align: center;
+
 }
      h1 {
           font-size: 150%;   
+          margin-right: 0;
+          margin-top: 0;
+          text-align: center;
+          word-break: initial;
+}
+     #audio {
+          width: 100%;
+          float: none;
+          margin-bottom: 1%;
 }
      
      audio {
           width: 100%;  
           float: none;
+          
      }
+     
+    #mensagem {
+     float: none;
+     width: 100%;
+}
 }
